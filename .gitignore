@@ -17,6 +17,7 @@ ENV/
 .idea/
 *.swp
 *.swo
+*.bat
 
 # OS
 .DS_Store
