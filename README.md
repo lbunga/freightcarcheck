@@ -19,6 +19,51 @@
 
 ---
 
+## Features in Detail
+
+### 📊 Dashboard Tab
+- **KPI Cards**: Total cars (150), tonnage (~10,000 tons), hazmat count (~27 cars), braking ratio
+- **Cargo Breakdown**: Pie chart showing hazmat vs. safe cargo tonnage
+- **Weight Distribution**: Front/middle/rear percentages (important for grade climbing)
+- **Hazmat Summary**: Table of hazmat by DOT class, car count, and tonnage
+- **Car Type Distribution**: Bar chart of flat cars, tank cars, gondolas, hoppers, boxcars
+
+### 📋 Manifest Table Tab
+- **Real-time Filters**:
+  - 🔍 Search by car ID, cargo description, origin, destination
+  - ☑️ Hazmat-only toggle
+  - 📦 Car type multiselect (flat, tank, gondola, etc.)
+  - ⚠️ Hazmat class filter (Classes 1-9)
+- **Color-Coded Rows**: Red = hazmat, green = safe cargo
+- **Full Car Details**: Position, car ID, type, weight, cargo, hazmat class, UN code, route
+
+### 🚃 Train Layout Tab
+- **Interactive Horizontal Diagram**: 150 cars rendered as color-coded bars
+- **Hover Details**: Car ID, position, weight, cargo, hazmat status on hover
+- **Hazmat Distribution Chart**: Bar chart showing hazmat class breakdown
+- **Hazmat Details**: Tonnage and car count per class
+
+---
+
+## Use Cases
+
+### 🚂 Train Conductors
+- Quick audit of train composition before departure
+- Verify hazmat placements and UN codes
+- Check weight distribution for grade climbing
+
+### 👨‍🚒 First Responders
+- Rapid hazmat assessment during derailment/incident
+- Identify safe evacuation zones based on hazmat class
+- Quick tonnage data for rescue operation planning
+
+### 🛡️ Safety Teams
+- Pre-departure safety audits
+- Regulatory compliance documentation (DOT, FRA)
+- Train handling optimization for steep grades
+
+---
+
 ## Installation & Setup
 
 ### Requirements
@@ -75,33 +120,7 @@ freightcarcheck/
     └── config.toml           # Streamlit UI configuration
 ```
 
----
 
-## Features in Detail
-
-### 📊 Dashboard Tab
-- **KPI Cards**: Total cars (150), tonnage (~10,000 tons), hazmat count (~27 cars), braking ratio
-- **Cargo Breakdown**: Pie chart showing hazmat vs. safe cargo tonnage
-- **Weight Distribution**: Front/middle/rear percentages (important for grade climbing)
-- **Hazmat Summary**: Table of hazmat by DOT class, car count, and tonnage
-- **Car Type Distribution**: Bar chart of flat cars, tank cars, gondolas, hoppers, boxcars
-
-### 📋 Manifest Table Tab
-- **Real-time Filters**:
-  - 🔍 Search by car ID, cargo description, origin, destination
-  - ☑️ Hazmat-only toggle
-  - 📦 Car type multiselect (flat, tank, gondola, etc.)
-  - ⚠️ Hazmat class filter (Classes 1-9)
-- **Color-Coded Rows**: Red = hazmat, green = safe cargo
-- **Full Car Details**: Position, car ID, type, weight, cargo, hazmat class, UN code, route
-
-### 🚃 Train Layout Tab
-- **Interactive Horizontal Diagram**: 150 cars rendered as color-coded bars
-- **Hover Details**: Car ID, position, weight, cargo, hazmat status on hover
-- **Hazmat Distribution Chart**: Bar chart showing hazmat class breakdown
-- **Hazmat Details**: Tonnage and car count per class
-
----
 
 ## Sample Data Format
 
@@ -252,7 +271,7 @@ streamlit run app.py --server.port 8502
 
 ## Future Enhancements (v2.0+)
 
-- 📤 Upload PDF/text manifest documents for parsing
+- 📤 location based train consist data
 - 🗺️ Real corridor data (Colorado mountain grades, Tehachapi Pass, Cajon Pass)
 - 🚨 Emergency response mode (lightweight UI, hazmat-only view, large text)
 - 📱 Mobile app version for first responders
@@ -261,24 +280,7 @@ streamlit run app.py --server.port 8502
 
 ---
 
-## Use Cases
 
-### 🚂 Train Conductors
-- Quick audit of train composition before departure
-- Verify hazmat placements and UN codes
-- Check weight distribution for grade climbing
-
-### 👨‍🚒 First Responders
-- Rapid hazmat assessment during derailment/incident
-- Identify safe evacuation zones based on hazmat class
-- Quick tonnage data for rescue operation planning
-
-### 🛡️ Safety Teams
-- Pre-departure safety audits
-- Regulatory compliance documentation (DOT, FRA)
-- Train handling optimization for steep grades
-
----
 
 ## License & Attribution
 
