@@ -2,7 +2,7 @@
 
 ## Overview
 
-**FreightcarchecK** is an intuitive Python/Streamlit application designed for train crews, conductors, and first responders to quickly access freight train manifests during emergencies. 
+**FreightcarchecK** is an intuitive Python/Streamlit application designed for Train conductors , Safety Team and first responders to quickly access freight train manifests during emergencies. 
 
 ### Problem it Solves
 - 🚂 A 150-car freight train can weigh over 18,000 tons and stretch over two miles
