@@ -283,16 +283,7 @@ streamlit run app.py --server.port 8502
 
 
 ## License & Attribution
-
-**FreightcarchecK v1.0** - POC Application  
-Built with: Python, Streamlit, Plotly, Pandas, NumPy  
-For: Train Safety & Emergency Response
-
----
-
-## Contact & Support
-
-For questions or feedback, reach out to the development team or open an issue in the repository.
+FreightcarchecK v1.0 — MIT License © 2026. Built with Python, Streamlit, Plotly, Pandas, NumPy.
 
 **Quick Links:**
 - 📖 [Streamlit Documentation](https://docs.streamlit.io/)
